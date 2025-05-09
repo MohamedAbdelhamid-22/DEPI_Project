@@ -4,7 +4,7 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn project.wsgi:application
-    workingDir: project  # 👈 This line fixes the import error
+    workingDir: project/project  # 👈 This line fixes the import error
     envVars:
       - key: DEBUG
         value: "False"
