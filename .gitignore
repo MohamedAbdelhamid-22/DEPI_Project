@@ -1,0 +1,22 @@
+# Python virtual environment
+venv/
+Lib/
+Scripts/
+pyvenv.cfg
+
+# Django and Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Static & media
+staticfiles/
+media/
+
+# OS/system files
+.DS_Store
+CACHEDIR.TAG
+
+# Environment variables
+.env
