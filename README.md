@@ -74,7 +74,7 @@ Django Web App: http://127.0.0.1:8000/
 
 Streamlit Dashboard: usually at http://localhost:8501/
 
-📊 Dynamic Pricing Module
+## 📊 Dynamic Pricing Module
 The application includes a dynamic pricing engine that adjusts prices based on:
 
 📈 Forecasted Demand
@@ -105,19 +105,17 @@ Results page displays predicted sales and suggested prices
 
 📈 Streamlit Dashboard
 
-Upload your dataset or interact with preloaded data
-
 Visualize demand forecasts, pricing trends, and performance summaries
 
-📂 Upload Your Dataset
-To test the system with your own data, click here to upload the dataset
+📂 Upload the Dataset
+To test the system click here to upload the dataset
 
 https://drive.google.com/drive/folders/1xm83NomBq76rEK9Ha4RcsPvT38cwP5CW
 
 🛡️ Challenges and Solutions
 Cross-Environment Compatibility: Aligned Python versions and library dependencies between Jupyter and Django.
 
-Consistent Feature Engineering: Exported transformers (e.g., OneHotEncoder, StandardScaler) for reuse.
+Consistent Feature Engineering: Exported transformers for reuse.
 
 Categorical Input Handling: Used dropdown menus mapped to encoded variables.
 
@@ -126,8 +124,6 @@ Pricing Logic: Modeled pricing constraints and elasticity with domain assumption
 🚧 Future Improvements
 ☁️ Deploy on Heroku or AWS
 
-👤 Add user authentication and session tracking
-
 🧠 Auto-ML model retraining and evaluation pipeline
 
 📈 Add export options for dashboards and prediction results
@@ -135,9 +131,6 @@ Pricing Logic: Modeled pricing constraints and elasticity with domain assumption
 🤝 Contributing
 We welcome contributions! If you'd like to help improve PolyMind, please fork the repo and open a pull request.
 For large changes, open an issue to discuss what you'd like to contribute.
-
-📄 License
-This project is licensed under the MIT License. See the LICENSE file for details.
 
 📬 Contact
 GitHub: MohamedAbdelhamid-22
