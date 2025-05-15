@@ -107,4 +107,3 @@ Connect with us on LinkedIn:
 ## 🤝 Contributing
 
 We welcome contributions! Please fork the repository and submit pull requests for any improvements or bug fixes.
-```
