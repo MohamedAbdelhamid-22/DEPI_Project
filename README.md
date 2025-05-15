@@ -22,26 +22,24 @@
 
 ## 📁 Project Structure
 
+```
 PolyMind/
 ├── deployment/ # Django backend and frontend
-│ ├── manage.py
-│ ├── requirements.txt
-│ └── ...
+│   ├── manage.py
+│   ├── requirements.txt
+│   └── ...
 ├── streamlit_app/ # Streamlit dashboard interface
-│ └── app.py
+│   └── app.py
 ├── notebooks/ # Jupyter notebooks for model building
-│ ├── model_training.ipynb
-│ ├── data_preprocessing.ipynb
-│ └── dynamic_pricing.ipynb
+│   ├── model_training.ipynb
+│   ├── data_preprocessing.ipynb
+│   └── dynamic_pricing.ipynb
 ├── documentation/ # Report and presentation
-│ └── project_report.pdf
+│   └── project_report.pdf
 ├── data/ # Raw and processed datasets (add your own)
-│ └── ...
-├── README.md
-
-bash
-Copy
-Edit
+│   └── ...
+└── README.md
+```
 
 ## ⚙️ Installation & Setup
 
@@ -49,90 +47,34 @@ Edit
    ```bash
    git clone https://github.com/MohamedAbdelhamid-22/DEPI_Project.git
    cd DEPI_Project
-Create and Activate a Virtual Environment
+   ```
 
+2. **Set Up Virtual Environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+   ```
 
-python -m venv venv
-source venv/bin/activate     # On Windows: venv\Scripts\activate
-Install Dependencies
+3. **Install Dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
+4. **Run the Application**
+   - For Django backend:
+     ```bash
+     cd deployment
+     python manage.py runserver
+     ```
+   - For Streamlit dashboard:
+     ```bash
+     cd streamlit_app
+     streamlit run app.py
+     ```
 
-pip install -r deployment/requirements.txt
-Run Django App
+## 📄 License
 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+```
 
-python deployment/manage.py migrate
-python deployment/manage.py runserver
-Run Streamlit Dashboard
-
-
-cd streamlit_app
-streamlit run app.py
-Open in Browser
-
-Django Web App: http://127.0.0.1:8000/
-
-Streamlit Dashboard: usually at http://localhost:8501/
-
-## 📊 Dynamic Pricing Module
-The application includes a dynamic pricing engine that adjusts prices based on:
-
-📈 Forecasted Demand
-
-🧮 Price Elasticity Estimates
-
-📦 Inventory Levels
-
-📆 Seasonal and Promotional Factors
-
-The pricing model outputs optimal values that maximize revenue without negatively affecting demand, simulating real-world business responsiveness.
-
-🧠 Machine Learning Model
-Algorithm: XGBoost Regressor
-
-Serialized Using: pickle
-
-Training Data: Includes item metadata, holidays, store info, promotions, and dates
-
-Pipeline Integrity: Feature preprocessing (scaling, encoding) reused in production
-
-🧪 How to Use
-🌐 Django Website
-
-Input form collects forecasting parameters (e.g., item type, store, date)
-
-Results page displays predicted sales and suggested prices
-
-📈 Streamlit Dashboard
-
-Visualize demand forecasts, pricing trends, and performance summaries
-
-📂 Upload the Dataset
-To test the system click here to upload the dataset
-
-https://drive.google.com/drive/folders/1xm83NomBq76rEK9Ha4RcsPvT38cwP5CW
-
-🛡️ Challenges and Solutions
-Cross-Environment Compatibility: Aligned Python versions and library dependencies between Jupyter and Django.
-
-Consistent Feature Engineering: Exported transformers for reuse.
-
-Categorical Input Handling: Used dropdown menus mapped to encoded variables.
-
-Pricing Logic: Modeled pricing constraints and elasticity with domain assumptions.
-
-🚧 Future Improvements
-☁️ Deploy on Heroku or AWS
-
-🧠 Auto-ML model retraining and evaluation pipeline
-
-📈 Add export options for dashboards and prediction results
-
-🤝 Contributing
-We welcome contributions! If you'd like to help improve PolyMind, please fork the repo and open a pull request.
-For large changes, open an issue to discuss what you'd like to contribute.
-
-📬 Contact
-GitHub: MohamedAbdelhamid-22
-
-Built as part of the Digital Egypt Pioneers Initiative to demonstrate real-world applications of AI in business intelligence.
+You can now copy this entire block and paste it directly into your `README.md` file. The formatting will be preserved when viewed on GitHub or any Markdown viewer.
