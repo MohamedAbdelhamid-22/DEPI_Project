@@ -1,6 +1,3 @@
-Here's the complete updated `README.md` with MySQL instead of PostgreSQL, ready to copy and paste:
-
-```markdown
 # PolyMind
 
 **PolyMind** is a machine learning-powered web application designed to help businesses forecast sales, predict demand, and implement intelligent dynamic pricing strategies. Built with Django and Streamlit, the project integrates advanced predictive models and dynamic dashboards to deliver actionable retail insights.
